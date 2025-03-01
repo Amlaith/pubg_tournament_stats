@@ -93,9 +93,11 @@ with players_tab:
     for col in ['DBNOs', 'assists', 'damageDealt', 'kills', 'revives', 'timeSurvived']:
         players_results_agg[col + '_per_match'] = players_results_agg[col] / players_results_agg['matchNum']
 
+    
+
     column_config = {
             # 'playerName': st.column_config.TextColumn('Игровой ник', pinned=True),
-            # 'teamId': st.column_config.TextColumn('Команда', pinned=True),
+            # 'teamName': st.column_config.TextColumn('Команда', pinned=True),
             'playerName': 'Игровой ник',
             'kills': 'Киллы', 
             'kills_per_match': st.column_config.NumberColumn("Киллы/матч", format="%.2f"),
@@ -115,6 +117,7 @@ with players_tab:
 
     column_order = [
         'playerName',
+        # 'teamName',
         'kills',
         'kills_per_match',
         'assists',
