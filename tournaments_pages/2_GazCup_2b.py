@@ -61,7 +61,7 @@ with matches_tab:
             options=[str(row[1]['matchNum']) + ' – ' + row[1]['mapName'] for row in matches.iterrows()],
             label_visibility='collapsed'
         ).split()[0]) if matches.shape[0] > 0 else 0
-    
+        
     placement_in_match = teams_results[teams_results['matchNum'] == match_num][['teamId', 'rank', 'points']]
     kills_in_match = players_results[players_results['matchNum'] == match_num].groupby('teamId')['kills'].sum()
 
