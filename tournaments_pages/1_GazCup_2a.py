@@ -80,6 +80,7 @@ with matches_tab:
 # Статистика игроков
 with players_tab:
     players_results_agg = players_results.groupby('playerName').agg({
+            'teamId': pd.Series.mode,
             'matchNum': pd.Series.count,
             'DBNOs': pd.Series.sum,
             'assists': pd.Series.sum,
@@ -93,8 +94,12 @@ with players_tab:
     for col in ['DBNOs', 'assists', 'damageDealt', 'kills', 'revives', 'timeSurvived']:
         players_results_agg[col + '_per_match'] = players_results_agg[col] / players_results_agg['matchNum']
 
+    players_results_agg = players_results_agg.join(teams.set_index('teamId'), on='teamId')
+
     column_config = {
-            'playerName': 'Игровой ник',
+            'playerName': st.column_config.TextColumn('Игровой ник', pinned=True),
+            'teamName': st.column_config.TextColumn('Команда', pinned=True),
+            # 'playerName': 'Игровой ник',
             'kills': 'Киллы', 
             'kills_per_match': st.column_config.NumberColumn("Киллы/матч", format="%.2f"),
             'assists': 'Ассисты',
@@ -113,6 +118,7 @@ with players_tab:
 
     column_order = [
         'playerName',
+        'teamName',
         'kills',
         'kills_per_match',
         'assists',
