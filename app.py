@@ -39,7 +39,7 @@ def main():
         st.subheader('Контакты')
         st.markdown("""
                     [Telegram](https://t.me/gazcupPUBG)  
-                    [Discord](https://discord.gg/gSUJckTg)  
+                    [Discord](https://discord.gg/FmB39jz7rz)  
                     [Twitch](https://www.twitch.tv/gazbro27)  
                     """)
 
@@ -80,14 +80,16 @@ def main():
 
 
 homepage = st.Page(main, title="Главная страница", icon=":material/trophy:")
-gazcup_1 = st.Page("tournaments_pages/3_GazCup_1.py", title="GAZ CUP #1", icon=":material/history:")
-gazcup_2a = st.Page("tournaments_pages/1_GazCup_2a.py", title="GAZ CUP #2, лобби A", icon=":material/table:")
-gazcup_2b = st.Page("tournaments_pages/2_GazCup_2b.py", title="GAZ CUP #2, лобби B", icon=":material/table:")
+gazcup_1 = st.Page("app_pages/3_GazCup_1.py", title="GAZ CUP #1", icon=":material/history:")
+gazcup_2a = st.Page("app_pages/1_GazCup_2a.py", title="GAZ CUP #2, лобби A", icon=":material/table:")
+gazcup_2b = st.Page("app_pages/2_GazCup_2b.py", title="GAZ CUP #2, лобби B", icon=":material/table:")
+team_registration = st.Page("app_pages/team_registration.py", title="Зарегистрировать команду", icon=":material/group_add:")
+player_registration = st.Page("app_pages/player_registration.py", title="Подбор команды", icon=":material/person_add:")
 
 
 pg = st.navigation(
         {
-            "GAZ CUP": [homepage],
+            "GAZ CUP": [homepage, team_registration, player_registration],
             "Актуальные турниры": [gazcup_2a, gazcup_2b],
             "Архив": [gazcup_1],
         }

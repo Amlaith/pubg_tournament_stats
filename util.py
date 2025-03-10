@@ -19,14 +19,14 @@ MAP_NAME = {
   "Neon_Main": "Rondo"
 }
 
-def get_player(player_name: str) -> dict:
+def get_player(player_name: str | list) -> dict:
     players_url = "https://api.pubg.com/shards/steam/players/"
     header = {
     "Authorization": "Bearer " + PUBG_KEY,
     "Accept": "application/vnd.api+json"
     }
     params = {
-        "filter[playerNames]": player_name
+        "filter[playerNames]": player_name if type(player_name) == str else ','.join(player_name)
     }
 
     r = requests.get(players_url, headers=header, params=params)
