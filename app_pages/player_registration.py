@@ -3,7 +3,7 @@ import pandas as pd
 
 from streamlit_gsheets import GSheetsConnection
 
-st.title('Регистрация команды')
+st.title('Подбор команды')
 
 st.write('Заполните эту форму, если в вашей команде меньше четырех человек. Мы свяжемся с вами и поможем найти команду.')
 
