@@ -6,7 +6,7 @@ from streamlit_gsheets import GSheetsConnection
 st.title('Регистрация команды')
 
 st.write('Заполните эту форму, если в вашей команде есть четыре человека.')
-st.write('Если в вашей команде меньше четырех человек, заполните форму во вкладке "Подбор команды".')
+st.write('Если в вашей команде меньше четырех человек, заполните форму во вкладке [Подбор команды](https://gazcup.streamlit.app/player_registration).')
 
 # st.write(conn)
 # st.help(conn)
