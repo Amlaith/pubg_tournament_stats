@@ -24,7 +24,7 @@ column_names = {
 }
 
 st.title("GAZ CUP #3, лобби A")
-st.subheader(":grey[28 марта 2025]")
+st.subheader(":grey[29 марта 2025]")
 
 results_tab, matches_tab, players_tab = st.tabs(["Турнирная таблица", "Результаты матчей", "Статистика игроков"])
 
