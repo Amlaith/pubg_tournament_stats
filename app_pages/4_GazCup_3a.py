@@ -14,7 +14,7 @@ teams = teams[teams['tournamentId'] == tournament_id].drop('tournamentId', axis=
 players_results = players_results[players_results['tournamentId'] == tournament_id].drop('tournamentId', axis=1)
 teams_results = teams_results[teams_results['tournamentId'] == tournament_id].drop('tournamentId', axis=1)
 
-rank_to_points = [0, 12, 9, 7, 5, 4, 4, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,]
+rank_to_points = [0, 12, 9, 7, 5, 4, 4, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,]
 column_names = {
     'teamName': 'Команда',
     'points': 'Баллы за места',
