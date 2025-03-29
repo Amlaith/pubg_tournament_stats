@@ -40,7 +40,7 @@ def main():
         st.markdown("""
                     [Telegram](https://t.me/gazcupPUBG)  
                     [Discord](https://discord.gg/FmB39jz7rz)  
-                    [Twitch](https://www.twitch.tv/gazbro27)  
+                    [Twitch](https://twitch.tv/gazcuppubg)  
                     """)
 
 
