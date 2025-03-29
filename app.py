@@ -91,8 +91,8 @@ player_registration = st.Page("app_pages/player_registration.py", title="Под�
 
 pg = st.navigation(
         {
-            # "GAZ CUP": [homepage],
-            "GAZ CUP": [homepage, team_registration, player_registration],
+            "GAZ CUP": [homepage],
+            # "GAZ CUP": [homepage, team_registration, player_registration],
             "Актуальные турниры": [gazcup_3a, gazcup_3b],
             "Архив": [gazcup_1, gazcup_2a, gazcup_2b],
         }
