@@ -93,8 +93,8 @@ pg = st.navigation(
         {
             "GAZ CUP": [homepage],
             # "GAZ CUP": [homepage, team_registration, player_registration],
-            "Актуальные турниры": [gazcup_3a, gazcup_3b],
-            "Архив": [gazcup_1, gazcup_2a, gazcup_2b],
+            # "Актуальные турниры": [],
+            "Архив": [gazcup_1, gazcup_2a, gazcup_2b, gazcup_3a, gazcup_3b],
         }
     )
 
