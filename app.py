@@ -83,8 +83,8 @@ homepage = st.Page(main, title="Главная страница", icon=":materia
 gazcup_1 = st.Page("app_pages/3_GazCup_1.py", title="GAZ CUP #1", icon=":material/history:")
 gazcup_2a = st.Page("app_pages/1_GazCup_2a.py", title="GAZ CUP #2, лобби A", icon=":material/history:")
 gazcup_2b = st.Page("app_pages/2_GazCup_2b.py", title="GAZ CUP #2, лобби B", icon=":material/history:")
-gazcup_3a = st.Page("app_pages/4_GazCup_3a.py", title="GAZ CUP #3, лобби A", icon=":material/table:")
-gazcup_3b = st.Page("app_pages/5_GazCup_3b.py", title="GAZ CUP #3, лобби B", icon=":material/table:")
+gazcup_3a = st.Page("app_pages/4_GazCup_3a.py", title="GAZ CUP #3, лобби A", icon=":material/history:")
+gazcup_3b = st.Page("app_pages/5_GazCup_3b.py", title="GAZ CUP #3, лобби B", icon=":material/history:")
 team_registration = st.Page("app_pages/team_registration.py", title="Зарегистрировать команду", icon=":material/group_add:")
 player_registration = st.Page("app_pages/player_registration.py", title="Подбор команды", icon=":material/person_add:")
 
